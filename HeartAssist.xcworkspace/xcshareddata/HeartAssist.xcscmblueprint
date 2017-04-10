@@ -1,0 +1,29 @@
+{
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "3B7CDF04B0BAA84EC0F7120631FA2465975BB99C" : 9223372036854775807,
+    "11F5B74C87EFA08F9EB484143CC307E958146020" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "52FE7A91-9ACA-4C36-ADA8-395532367A98",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "3B7CDF04B0BAA84EC0F7120631FA2465975BB99C" : "Musli\/",
+    "11F5B74C87EFA08F9EB484143CC307E958146020" : "Granola\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "HeartAssist",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "HeartAssist.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/openmhealth\/Granola.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "11F5B74C87EFA08F9EB484143CC307E958146020"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:CommonSenseDTU\/musli.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "3B7CDF04B0BAA84EC0F7120631FA2465975BB99C"
+    }
+  ]
+}

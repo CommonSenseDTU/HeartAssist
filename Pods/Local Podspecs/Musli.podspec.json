@@ -1,0 +1,36 @@
+{
+  "name": "Musli",
+  "version": "0.1.0",
+  "summary": "A short description of musli.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/CommonSenseDTU/musli",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "Anders Borch": "anders@cyborch.com"
+  },
+  "source": {
+    "git": "https://github.com/CommonSenseDTU/musli.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "musli/Classes/**/*",
+  "dependencies": {
+    "RestKit": [
+
+    ],
+    "ResearchKit": [
+      "~> 1.3"
+    ],
+    "RKValueTransformers": [
+      "~> 1.1"
+    ],
+    "Granola": [
+      "~> 0.5"
+    ]
+  }
+}

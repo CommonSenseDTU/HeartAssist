@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4ED52562040263D3FC36A291 /* Pods_HeartAssist.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1C2E2ED84B5DEA72765C09C /* Pods_HeartAssist.framework */; };
 		904230401E9BBE5600439C2A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9042303F1E9BBE5600439C2A /* AppDelegate.swift */; };
 		904230421E9BBE5600439C2A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 904230411E9BBE5600439C2A /* ViewController.swift */; };
 		904230451E9BBE5600439C2A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 904230431E9BBE5600439C2A /* Main.storyboard */; };
@@ -14,6 +15,8 @@
 		9042304A1E9BBE5600439C2A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 904230481E9BBE5600439C2A /* LaunchScreen.storyboard */; };
 		904230551E9BBE5600439C2A /* HeartAssistTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 904230541E9BBE5600439C2A /* HeartAssistTests.swift */; };
 		904230601E9BBE5600439C2A /* HeartAssistUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9042305F1E9BBE5600439C2A /* HeartAssistUITests.swift */; };
+		C7AB00F16CE5ABBE8EEC8D46 /* Pods_HeartAssistUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BA7D9B37556E356E9F0D699 /* Pods_HeartAssistUITests.framework */; };
+		F62350A06EFD92D0BE339703 /* Pods_HeartAssistTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15E747A94BEDDEBCB6A868CA /* Pods_HeartAssistTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		15E747A94BEDDEBCB6A868CA /* Pods_HeartAssistTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HeartAssistTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3C890F40266A5229C1458DC2 /* Pods-HeartAssistTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HeartAssistTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HeartAssistTests/Pods-HeartAssistTests.debug.xcconfig"; sourceTree = "<group>"; };
 		9042303C1E9BBE5600439C2A /* HeartAssist.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HeartAssist.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9042303F1E9BBE5600439C2A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		904230411E9BBE5600439C2A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +52,13 @@
 		9042305B1E9BBE5600439C2A /* HeartAssistUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HeartAssistUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9042305F1E9BBE5600439C2A /* HeartAssistUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeartAssistUITests.swift; sourceTree = "<group>"; };
 		904230611E9BBE5600439C2A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		92F19CB21D1111606E3330DA /* Pods-HeartAssist.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HeartAssist.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HeartAssist/Pods-HeartAssist.debug.xcconfig"; sourceTree = "<group>"; };
+		96372F346C4A444BAFAD8316 /* Pods-HeartAssistUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HeartAssistUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HeartAssistUITests/Pods-HeartAssistUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		9BA7D9B37556E356E9F0D699 /* Pods_HeartAssistUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HeartAssistUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B328E6608B0121D7B5F52A84 /* Pods-HeartAssistTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HeartAssistTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-HeartAssistTests/Pods-HeartAssistTests.release.xcconfig"; sourceTree = "<group>"; };
+		C7EF4E5913F7D08DBB82C219 /* Pods-HeartAssistUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HeartAssistUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-HeartAssistUITests/Pods-HeartAssistUITests.release.xcconfig"; sourceTree = "<group>"; };
+		D1C2E2ED84B5DEA72765C09C /* Pods_HeartAssist.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HeartAssist.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FC7175F006C3DB97E35A978A /* Pods-HeartAssist.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HeartAssist.release.xcconfig"; path = "Pods/Target Support Files/Pods-HeartAssist/Pods-HeartAssist.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4ED52562040263D3FC36A291 /* Pods_HeartAssist.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F62350A06EFD92D0BE339703 /* Pods_HeartAssistTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,12 +82,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C7AB00F16CE5ABBE8EEC8D46 /* Pods_HeartAssistUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4B39FFCD03A1E9EA59EC7E7E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				92F19CB21D1111606E3330DA /* Pods-HeartAssist.debug.xcconfig */,
+				FC7175F006C3DB97E35A978A /* Pods-HeartAssist.release.xcconfig */,
+				3C890F40266A5229C1458DC2 /* Pods-HeartAssistTests.debug.xcconfig */,
+				B328E6608B0121D7B5F52A84 /* Pods-HeartAssistTests.release.xcconfig */,
+				96372F346C4A444BAFAD8316 /* Pods-HeartAssistUITests.debug.xcconfig */,
+				C7EF4E5913F7D08DBB82C219 /* Pods-HeartAssistUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		7A1D5707B36C9853F96D1F3E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D1C2E2ED84B5DEA72765C09C /* Pods_HeartAssist.framework */,
+				15E747A94BEDDEBCB6A868CA /* Pods_HeartAssistTests.framework */,
+				9BA7D9B37556E356E9F0D699 /* Pods_HeartAssistUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		904230331E9BBE5600439C2A = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +119,8 @@
 				904230531E9BBE5600439C2A /* HeartAssistTests */,
 				9042305E1E9BBE5600439C2A /* HeartAssistUITests */,
 				9042303D1E9BBE5600439C2A /* Products */,
+				4B39FFCD03A1E9EA59EC7E7E /* Pods */,
+				7A1D5707B36C9853F96D1F3E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -132,9 +172,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 904230641E9BBE5600439C2A /* Build configuration list for PBXNativeTarget "HeartAssist" */;
 			buildPhases = (
+				D61295EF6E935ACCBAD0BC66 /* [CP] Check Pods Manifest.lock */,
 				904230381E9BBE5600439C2A /* Sources */,
 				904230391E9BBE5600439C2A /* Frameworks */,
 				9042303A1E9BBE5600439C2A /* Resources */,
+				3917C8D69A3C126B16AF5728 /* [CP] Embed Pods Frameworks */,
+				BE0DE6C319A5EB0596A7D21F /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -149,9 +192,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 904230671E9BBE5600439C2A /* Build configuration list for PBXNativeTarget "HeartAssistTests" */;
 			buildPhases = (
+				D10BDEDF31F95EA6D3E9F11F /* [CP] Check Pods Manifest.lock */,
 				9042304C1E9BBE5600439C2A /* Sources */,
 				9042304D1E9BBE5600439C2A /* Frameworks */,
 				9042304E1E9BBE5600439C2A /* Resources */,
+				E2B8425D440E36E788CF2577 /* [CP] Embed Pods Frameworks */,
+				B4094A1E5E7E039557165AFB /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -167,9 +213,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9042306A1E9BBE5600439C2A /* Build configuration list for PBXNativeTarget "HeartAssistUITests" */;
 			buildPhases = (
+				776E20C70A3F6C7E1617218D /* [CP] Check Pods Manifest.lock */,
 				904230571E9BBE5600439C2A /* Sources */,
 				904230581E9BBE5600439C2A /* Frameworks */,
 				904230591E9BBE5600439C2A /* Resources */,
+				A57E7BFA30AF7EAD6CA2A60C /* [CP] Embed Pods Frameworks */,
+				F625C667D7254C55634F473D /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -257,13 +306,153 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		3917C8D69A3C126B16AF5728 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HeartAssist/Pods-HeartAssist-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		776E20C70A3F6C7E1617218D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		A57E7BFA30AF7EAD6CA2A60C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HeartAssistUITests/Pods-HeartAssistUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B4094A1E5E7E039557165AFB /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HeartAssistTests/Pods-HeartAssistTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BE0DE6C319A5EB0596A7D21F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HeartAssist/Pods-HeartAssist-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D10BDEDF31F95EA6D3E9F11F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		D61295EF6E935ACCBAD0BC66 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E2B8425D440E36E788CF2577 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HeartAssistTests/Pods-HeartAssistTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F625C667D7254C55634F473D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HeartAssistUITests/Pods-HeartAssistUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		904230381E9BBE5600439C2A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				904230701E9BC9D600439C2A /* User+Locksmith.swift in Sources */,
 				904230421E9BBE5600439C2A /* ViewController.swift in Sources */,
 				904230401E9BBE5600439C2A /* AppDelegate.swift in Sources */,
+				904230721E9BCDCA00439C2A /* OnboardingViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -413,6 +602,7 @@
 		};
 		904230651E9BBE5600439C2A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 92F19CB21D1111606E3330DA /* Pods-HeartAssist.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = T8GF25SAZN;
@@ -426,6 +616,7 @@
 		};
 		904230661E9BBE5600439C2A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FC7175F006C3DB97E35A978A /* Pods-HeartAssist.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = T8GF25SAZN;
@@ -439,6 +630,7 @@
 		};
 		904230681E9BBE5600439C2A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3C890F40266A5229C1458DC2 /* Pods-HeartAssistTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -454,6 +646,7 @@
 		};
 		904230691E9BBE5600439C2A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B328E6608B0121D7B5F52A84 /* Pods-HeartAssistTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -469,6 +662,7 @@
 		};
 		9042306B1E9BBE5600439C2A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 96372F346C4A444BAFAD8316 /* Pods-HeartAssistUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = T8GF25SAZN;
@@ -483,6 +677,7 @@
 		};
 		9042306C1E9BBE5600439C2A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C7EF4E5913F7D08DBB82C219 /* Pods-HeartAssistUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = T8GF25SAZN;
@@ -514,6 +709,7 @@
 				904230661E9BBE5600439C2A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		904230671E9BBE5600439C2A /* Build configuration list for PBXNativeTarget "HeartAssistTests" */ = {
 			isa = XCConfigurationList;
@@ -522,6 +718,7 @@
 				904230691E9BBE5600439C2A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9042306A1E9BBE5600439C2A /* Build configuration list for PBXNativeTarget "HeartAssistUITests" */ = {
 			isa = XCConfigurationList;
@@ -530,6 +727,7 @@
 				9042306C1E9BBE5600439C2A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
