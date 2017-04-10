@@ -15,6 +15,7 @@
 		9042304A1E9BBE5600439C2A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 904230481E9BBE5600439C2A /* LaunchScreen.storyboard */; };
 		904230551E9BBE5600439C2A /* HeartAssistTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 904230541E9BBE5600439C2A /* HeartAssistTests.swift */; };
 		904230601E9BBE5600439C2A /* HeartAssistUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9042305F1E9BBE5600439C2A /* HeartAssistUITests.swift */; };
+		904230701E9BC9D600439C2A /* User+Locksmith.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9042306F1E9BC9D600439C2A /* User+Locksmith.swift */; };
 		C7AB00F16CE5ABBE8EEC8D46 /* Pods_HeartAssistUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BA7D9B37556E356E9F0D699 /* Pods_HeartAssistUITests.framework */; };
 		F62350A06EFD92D0BE339703 /* Pods_HeartAssistTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15E747A94BEDDEBCB6A868CA /* Pods_HeartAssistTests.framework */; };
 /* End PBXBuildFile section */
@@ -52,6 +53,7 @@
 		9042305B1E9BBE5600439C2A /* HeartAssistUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HeartAssistUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9042305F1E9BBE5600439C2A /* HeartAssistUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeartAssistUITests.swift; sourceTree = "<group>"; };
 		904230611E9BBE5600439C2A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9042306F1E9BC9D600439C2A /* User+Locksmith.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "User+Locksmith.swift"; sourceTree = "<group>"; };
 		92F19CB21D1111606E3330DA /* Pods-HeartAssist.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HeartAssist.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HeartAssist/Pods-HeartAssist.debug.xcconfig"; sourceTree = "<group>"; };
 		96372F346C4A444BAFAD8316 /* Pods-HeartAssistUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HeartAssistUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HeartAssistUITests/Pods-HeartAssistUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		9BA7D9B37556E356E9F0D699 /* Pods_HeartAssistUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HeartAssistUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -138,6 +140,7 @@
 			isa = PBXGroup;
 			children = (
 				9042303F1E9BBE5600439C2A /* AppDelegate.swift */,
+				9042306F1E9BC9D600439C2A /* User+Locksmith.swift */,
 				904230411E9BBE5600439C2A /* ViewController.swift */,
 				904230431E9BBE5600439C2A /* Main.storyboard */,
 				904230461E9BBE5600439C2A /* Assets.xcassets */,
