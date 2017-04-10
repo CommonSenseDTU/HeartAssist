@@ -1,0 +1,537 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		904230401E9BBE5600439C2A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9042303F1E9BBE5600439C2A /* AppDelegate.swift */; };
+		904230421E9BBE5600439C2A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 904230411E9BBE5600439C2A /* ViewController.swift */; };
+		904230451E9BBE5600439C2A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 904230431E9BBE5600439C2A /* Main.storyboard */; };
+		904230471E9BBE5600439C2A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 904230461E9BBE5600439C2A /* Assets.xcassets */; };
+		9042304A1E9BBE5600439C2A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 904230481E9BBE5600439C2A /* LaunchScreen.storyboard */; };
+		904230551E9BBE5600439C2A /* HeartAssistTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 904230541E9BBE5600439C2A /* HeartAssistTests.swift */; };
+		904230601E9BBE5600439C2A /* HeartAssistUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9042305F1E9BBE5600439C2A /* HeartAssistUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		904230511E9BBE5600439C2A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 904230341E9BBE5600439C2A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9042303B1E9BBE5600439C2A;
+			remoteInfo = HeartAssist;
+		};
+		9042305C1E9BBE5600439C2A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 904230341E9BBE5600439C2A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9042303B1E9BBE5600439C2A;
+			remoteInfo = HeartAssist;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		9042303C1E9BBE5600439C2A /* HeartAssist.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HeartAssist.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9042303F1E9BBE5600439C2A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		904230411E9BBE5600439C2A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		904230441E9BBE5600439C2A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		904230461E9BBE5600439C2A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		904230491E9BBE5600439C2A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9042304B1E9BBE5600439C2A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		904230501E9BBE5600439C2A /* HeartAssistTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HeartAssistTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		904230541E9BBE5600439C2A /* HeartAssistTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeartAssistTests.swift; sourceTree = "<group>"; };
+		904230561E9BBE5600439C2A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9042305B1E9BBE5600439C2A /* HeartAssistUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HeartAssistUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9042305F1E9BBE5600439C2A /* HeartAssistUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeartAssistUITests.swift; sourceTree = "<group>"; };
+		904230611E9BBE5600439C2A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		904230391E9BBE5600439C2A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9042304D1E9BBE5600439C2A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		904230581E9BBE5600439C2A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		904230331E9BBE5600439C2A = {
+			isa = PBXGroup;
+			children = (
+				9042303E1E9BBE5600439C2A /* HeartAssist */,
+				904230531E9BBE5600439C2A /* HeartAssistTests */,
+				9042305E1E9BBE5600439C2A /* HeartAssistUITests */,
+				9042303D1E9BBE5600439C2A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9042303D1E9BBE5600439C2A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9042303C1E9BBE5600439C2A /* HeartAssist.app */,
+				904230501E9BBE5600439C2A /* HeartAssistTests.xctest */,
+				9042305B1E9BBE5600439C2A /* HeartAssistUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9042303E1E9BBE5600439C2A /* HeartAssist */ = {
+			isa = PBXGroup;
+			children = (
+				9042303F1E9BBE5600439C2A /* AppDelegate.swift */,
+				904230411E9BBE5600439C2A /* ViewController.swift */,
+				904230431E9BBE5600439C2A /* Main.storyboard */,
+				904230461E9BBE5600439C2A /* Assets.xcassets */,
+				904230481E9BBE5600439C2A /* LaunchScreen.storyboard */,
+				9042304B1E9BBE5600439C2A /* Info.plist */,
+			);
+			path = HeartAssist;
+			sourceTree = "<group>";
+		};
+		904230531E9BBE5600439C2A /* HeartAssistTests */ = {
+			isa = PBXGroup;
+			children = (
+				904230541E9BBE5600439C2A /* HeartAssistTests.swift */,
+				904230561E9BBE5600439C2A /* Info.plist */,
+			);
+			path = HeartAssistTests;
+			sourceTree = "<group>";
+		};
+		9042305E1E9BBE5600439C2A /* HeartAssistUITests */ = {
+			isa = PBXGroup;
+			children = (
+				9042305F1E9BBE5600439C2A /* HeartAssistUITests.swift */,
+				904230611E9BBE5600439C2A /* Info.plist */,
+			);
+			path = HeartAssistUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9042303B1E9BBE5600439C2A /* HeartAssist */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 904230641E9BBE5600439C2A /* Build configuration list for PBXNativeTarget "HeartAssist" */;
+			buildPhases = (
+				904230381E9BBE5600439C2A /* Sources */,
+				904230391E9BBE5600439C2A /* Frameworks */,
+				9042303A1E9BBE5600439C2A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HeartAssist;
+			productName = HeartAssist;
+			productReference = 9042303C1E9BBE5600439C2A /* HeartAssist.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9042304F1E9BBE5600439C2A /* HeartAssistTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 904230671E9BBE5600439C2A /* Build configuration list for PBXNativeTarget "HeartAssistTests" */;
+			buildPhases = (
+				9042304C1E9BBE5600439C2A /* Sources */,
+				9042304D1E9BBE5600439C2A /* Frameworks */,
+				9042304E1E9BBE5600439C2A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				904230521E9BBE5600439C2A /* PBXTargetDependency */,
+			);
+			name = HeartAssistTests;
+			productName = HeartAssistTests;
+			productReference = 904230501E9BBE5600439C2A /* HeartAssistTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		9042305A1E9BBE5600439C2A /* HeartAssistUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9042306A1E9BBE5600439C2A /* Build configuration list for PBXNativeTarget "HeartAssistUITests" */;
+			buildPhases = (
+				904230571E9BBE5600439C2A /* Sources */,
+				904230581E9BBE5600439C2A /* Frameworks */,
+				904230591E9BBE5600439C2A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9042305D1E9BBE5600439C2A /* PBXTargetDependency */,
+			);
+			name = HeartAssistUITests;
+			productName = HeartAssistUITests;
+			productReference = 9042305B1E9BBE5600439C2A /* HeartAssistUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		904230341E9BBE5600439C2A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = DTU;
+				TargetAttributes = {
+					9042303B1E9BBE5600439C2A = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = T8GF25SAZN;
+						ProvisioningStyle = Automatic;
+					};
+					9042304F1E9BBE5600439C2A = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = T8GF25SAZN;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 9042303B1E9BBE5600439C2A;
+					};
+					9042305A1E9BBE5600439C2A = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = T8GF25SAZN;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 9042303B1E9BBE5600439C2A;
+					};
+				};
+			};
+			buildConfigurationList = 904230371E9BBE5600439C2A /* Build configuration list for PBXProject "HeartAssist" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 904230331E9BBE5600439C2A;
+			productRefGroup = 9042303D1E9BBE5600439C2A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9042303B1E9BBE5600439C2A /* HeartAssist */,
+				9042304F1E9BBE5600439C2A /* HeartAssistTests */,
+				9042305A1E9BBE5600439C2A /* HeartAssistUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9042303A1E9BBE5600439C2A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9042304A1E9BBE5600439C2A /* LaunchScreen.storyboard in Resources */,
+				904230471E9BBE5600439C2A /* Assets.xcassets in Resources */,
+				904230451E9BBE5600439C2A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9042304E1E9BBE5600439C2A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		904230591E9BBE5600439C2A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		904230381E9BBE5600439C2A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				904230421E9BBE5600439C2A /* ViewController.swift in Sources */,
+				904230401E9BBE5600439C2A /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9042304C1E9BBE5600439C2A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				904230551E9BBE5600439C2A /* HeartAssistTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		904230571E9BBE5600439C2A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				904230601E9BBE5600439C2A /* HeartAssistUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		904230521E9BBE5600439C2A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9042303B1E9BBE5600439C2A /* HeartAssist */;
+			targetProxy = 904230511E9BBE5600439C2A /* PBXContainerItemProxy */;
+		};
+		9042305D1E9BBE5600439C2A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9042303B1E9BBE5600439C2A /* HeartAssist */;
+			targetProxy = 9042305C1E9BBE5600439C2A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		904230431E9BBE5600439C2A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				904230441E9BBE5600439C2A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		904230481E9BBE5600439C2A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				904230491E9BBE5600439C2A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		904230621E9BBE5600439C2A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		904230631E9BBE5600439C2A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		904230651E9BBE5600439C2A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = T8GF25SAZN;
+				INFOPLIST_FILE = HeartAssist/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = dt.dtu.HeartAssist;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		904230661E9BBE5600439C2A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = T8GF25SAZN;
+				INFOPLIST_FILE = HeartAssist/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = dt.dtu.HeartAssist;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		904230681E9BBE5600439C2A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = T8GF25SAZN;
+				INFOPLIST_FILE = HeartAssistTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = dt.dtu.HeartAssistTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HeartAssist.app/HeartAssist";
+			};
+			name = Debug;
+		};
+		904230691E9BBE5600439C2A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = T8GF25SAZN;
+				INFOPLIST_FILE = HeartAssistTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = dt.dtu.HeartAssistTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HeartAssist.app/HeartAssist";
+			};
+			name = Release;
+		};
+		9042306B1E9BBE5600439C2A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = T8GF25SAZN;
+				INFOPLIST_FILE = HeartAssistUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = dt.dtu.HeartAssistUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = HeartAssist;
+			};
+			name = Debug;
+		};
+		9042306C1E9BBE5600439C2A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = T8GF25SAZN;
+				INFOPLIST_FILE = HeartAssistUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = dt.dtu.HeartAssistUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = HeartAssist;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		904230371E9BBE5600439C2A /* Build configuration list for PBXProject "HeartAssist" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				904230621E9BBE5600439C2A /* Debug */,
+				904230631E9BBE5600439C2A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		904230641E9BBE5600439C2A /* Build configuration list for PBXNativeTarget "HeartAssist" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				904230651E9BBE5600439C2A /* Debug */,
+				904230661E9BBE5600439C2A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		904230671E9BBE5600439C2A /* Build configuration list for PBXNativeTarget "HeartAssistTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				904230681E9BBE5600439C2A /* Debug */,
+				904230691E9BBE5600439C2A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		9042306A1E9BBE5600439C2A /* Build configuration list for PBXNativeTarget "HeartAssistUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9042306B1E9BBE5600439C2A /* Debug */,
+				9042306C1E9BBE5600439C2A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 904230341E9BBE5600439C2A /* Project object */;
+}
