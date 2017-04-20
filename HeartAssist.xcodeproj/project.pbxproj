@@ -455,7 +455,6 @@
 				904230701E9BC9D600439C2A /* User+Locksmith.swift in Sources */,
 				904230421E9BBE5600439C2A /* ViewController.swift in Sources */,
 				904230401E9BBE5600439C2A /* AppDelegate.swift in Sources */,
-				904230721E9BCDCA00439C2A /* OnboardingViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
