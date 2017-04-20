@@ -32,10 +32,11 @@ class ViewController: UIViewController {
         controller.present(alert, animated: true, completion: nil)
     }
 
-    private func showConsentFlow(survey: Survey) {
+    private func showConsentFlow(survey: Survey, registerUser: Bool) {
         self.consentManager = ConsentFlowManager(resourceManager: self.resourceManager, survey: survey)
         
-        let consentController = self.consentManager!.viewController
+        let consentController = self.consentManager!.viewController(register: registerUser)
+        
         self.consentManager?.delegate.consentCompletion = { (_ controller: UIViewController, _ user: Musli.User?, authRefreshToken: String?, _ error: Error?) in
             if let userError = error as? ResourceManager.UserCreationError {
                 self.presentErrorWithOKButton(controller: controller,
@@ -43,11 +44,23 @@ class ViewController: UIViewController {
                                               message: userError.localizedDescription)
             }
             guard user != nil else { return }
-            consentController.dismiss(animated: true, completion: {
-                guard let taskController = self.taskManager!.viewController(task: survey.task) else { return }
-                self.taskManager?.start(task: survey.task)
-                self.present(taskController, animated: false, completion: nil)
-            })
+            
+            do {
+                try user?.createInSecureStore()
+                UserDefaults.standard.set(user?.userId, forKey: "account")
+
+                consentController.dismiss(animated: true, completion: {
+                    guard let taskController = self.taskManager!.viewController(task: survey.task) else { return }
+                    self.taskManager?.start(task: survey.task)
+                    self.present(taskController, animated: false, completion: nil)
+                })
+            } catch {
+                let title = NSLocalizedString("Storage Error", comment: "Storage Error title")
+                let message = NSLocalizedString("Could not save account information. Verify that you have enough free space", comment: "Storage Error message")
+                self.presentErrorWithOKButton(controller: self,
+                                              title: title,
+                                              message: message)
+            }
         }
         self.present(consentController, animated: false, completion: nil)
     }
@@ -59,7 +72,7 @@ class ViewController: UIViewController {
             guard error == nil else {
                 var title = NSLocalizedString("Error", comment: "Unknown Error title")
                 var message = NSLocalizedString("An error occurred, please try again later.", comment: "Unknown Error message")
-                if let response = (error as? NSError)?.userInfo[AFRKNetworkingOperationFailingURLResponseErrorKey] as? HTTPURLResponse {
+                if let response = (error as NSError?)?.userInfo[AFRKNetworkingOperationFailingURLResponseErrorKey] as? HTTPURLResponse {
                     if response.statusCode == 404 {
                         title = NSLocalizedString("Resource Not Found", comment: "404 Error title")
                         message = NSLocalizedString("The survey could not be found. Contact support or try again later.", comment: "404 Error message")
@@ -79,26 +92,30 @@ class ViewController: UIViewController {
             
             self.taskManager = TaskFlowManager(resourceManager: self.resourceManager, survey: survey!)
 
-            guard let user: User = User().readFromSecureStore() as? User else {
-                self.showConsentFlow(survey: survey!)
+            // Show consent flow if user has not been stored locally
+            guard let user = User.fromSecure() else {
+                self.showConsentFlow(survey: survey!, registerUser: true)
                 return
             }
+            // Show consent flow if there is no signature date
             guard let date = user.signature?.date else {
-                self.showConsentFlow(survey: survey!)
+                self.showConsentFlow(survey: survey!, registerUser: true)
                 return
             }
-            guard date >= survey!.consentDocument.modificationDateTime else {
-                self.showConsentFlow(survey: survey!)
+            /*
+             Show consent flow if consent flow was updated on a later calendar date
+             ResearchKit only stores signature date - not time, so we hope the 
+             researcher won't update the consent document more than once per day...
+             */
+            guard Calendar.current.compare(date, to: survey!.consentDocument.modificationDateTime, toGranularity: Calendar.Component.day) != .orderedAscending else {
+                self.showConsentFlow(survey: survey!, registerUser: false)
                 return
             }
+            
+            guard let taskController = self.taskManager?.viewController(task: survey!.task) else { return }
+            self.taskManager?.start(task: survey!.task)
+            self.present(taskController, animated: false, completion: nil)
         }
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
-
 }
 
