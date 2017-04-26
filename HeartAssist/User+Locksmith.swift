@@ -43,6 +43,7 @@ extension Musli.User: GenericPasswordSecureStorable, CreateableSecureStorable, R
             "id": id,
             "userId": userId ?? "",
             "password": password ?? "",
+            "refresh": refresh ?? "",
             "firstName": firstName ?? "",
             "lastName": lastName ?? "",
             "gender": gender ?? "",
@@ -59,7 +60,9 @@ extension Musli.User: GenericPasswordSecureStorable, CreateableSecureStorable, R
         if data["id"] is String {
             user.id = data["id"] as! String
         }
-        user.password = data["firstName"] as? String
+        user.password = data["password"] as? String
+        user.refresh = data["refresh"] as? String
+        user.firstName = data["firstName"] as? String
         user.lastName = data["lastName"] as? String
         user.gender = data["gender"] as? String
         if let date = data["dateOfBirth"] as? String {
