@@ -10,6 +10,7 @@ import UIKit
 import Musli
 import RestKit
 import Locksmith
+import Granola
 
 let secret = "7b66-4479-97d9-02d3253bb5c5"
 let surveyId = "17028160-1dd1-11e7-a5e7-4b5722ebfb6d"
@@ -31,13 +32,12 @@ class ViewController: UIViewController {
         }))
         controller.present(alert, animated: true, completion: nil)
     }
-
+    
     private func showConsentFlow(survey: Survey, registerUser: Bool) {
         self.consentManager = ConsentFlowManager(resourceManager: self.resourceManager, survey: survey)
-        
         let consentController = self.consentManager!.viewController(register: registerUser)
-        
-        self.consentManager?.delegate.consentCompletion = { (_ controller: UIViewController, _ user: Musli.User?, authRefreshToken: String?, _ error: Error?) in
+        self.consentManager?.delegate.existingUser = User.fromSecure()
+        self.consentManager?.delegate.consentCompletion = { (_ controller: UIViewController, _ user: Musli.User?, _ error: Error?) in
             if let userError = error as? ResourceManager.UserCreationError {
                 self.presentErrorWithOKButton(controller: controller,
                                               title: userError.localizedTitle,
@@ -46,9 +46,25 @@ class ViewController: UIViewController {
             guard user != nil else { return }
             
             do {
-                try user?.createInSecureStore()
+                if registerUser {
+                    try user?.createInSecureStore()
+                } else {
+                    try user?.updateInSecureStore()
+                }
                 UserDefaults.standard.set(user?.userId, forKey: "account")
 
+                let consent = ORKConsent()
+                if let uuid = UUID(uuidString: surveyId) {
+                    consent.surveyId = uuid
+                }
+                if user?.signature != nil {
+                    if let uuid = UUID(uuidString: user!.signature!.identifier) {
+                        consent.signatureId = uuid
+                    }
+                }
+                UserDefaults.standard.set(consent.data(), forKey: "consent")
+                self.resourceManager.consent = consent
+                
                 consentController.dismiss(animated: true, completion: {
                     guard let taskController = self.taskManager!.viewController(task: survey.task) else { return }
                     self.taskManager?.start(task: survey.task)
@@ -112,9 +128,28 @@ class ViewController: UIViewController {
                 return
             }
             
-            guard let taskController = self.taskManager?.viewController(task: survey!.task) else { return }
-            self.taskManager?.start(task: survey!.task)
-            self.present(taskController, animated: false, completion: nil)
+            guard let object = UserDefaults.standard.object(forKey: "consent") as? [AnyHashable: Any] else {
+                self.showConsentFlow(survey: survey!, registerUser: false)
+                return
+            }
+            self.resourceManager.consent = ORKConsent(data: object)
+            
+            guard user.userId != nil && user.password != nil else {
+                // TODO: show login flow
+                self.showConsentFlow(survey: survey!, registerUser: false)
+                return
+            }
+            
+            self.resourceManager.authorize(username: user.userId!, password: user.password!, completion: { (refreshToken: String?, error: Error?) in
+                guard error == nil else {
+                    // TODO: handle errors
+                    print(error)
+                    return
+                }
+                guard let taskController = self.taskManager?.viewController(task: survey!.task) else { return }
+                self.taskManager?.start(task: survey!.task)
+                self.present(taskController, animated: false, completion: nil)
+            })
         }
     }
 }
