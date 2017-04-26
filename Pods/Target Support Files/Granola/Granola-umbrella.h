@@ -15,6 +15,8 @@
 #import "OMHHealthKitConstantsMapper.h"
 #import "OMHSerializer.h"
 #import "OMHSerializerLocation.h"
+#import "OMHSerializerQuestion.h"
+#import "ORKSample.h"
 
 FOUNDATION_EXPORT double GranolaVersionNumber;
 FOUNDATION_EXPORT const unsigned char GranolaVersionString[];
