@@ -142,8 +142,16 @@ class ViewController: UIViewController {
             
             self.resourceManager.authorize(username: user.userId!, password: user.password!, completion: { (refreshToken: String?, error: Error?) in
                 guard error == nil else {
-                    // TODO: handle errors
-                    print(error)
+                    let alert = UIAlertController(title: NSLocalizedString("Authorization Failed", comment: "Title in client error dialog"),
+                                                  message: NSLocalizedString("Login failed, please authenticate again", comment: "Text in client error dialog"),
+                                                  preferredStyle: .alert)
+                    alert.addAction(UIAlertAction(title: NSLocalizedString("OK", comment: "OK alert button"),
+                                                  style: .default,
+                                                  handler: { (action) in
+                                                    alert.dismiss(animated: true, completion: nil)
+                                                    self.showConsentFlow(survey: survey!, registerUser: true)
+                    }))
+                    self.present(alert, animated: true, completion: nil)
                     return
                 }
                 guard let taskController = self.taskManager?.viewController(task: survey!.task) else { return }
