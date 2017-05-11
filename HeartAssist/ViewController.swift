@@ -46,9 +46,9 @@ class ViewController: UIViewController {
             guard user != nil else { return }
             
             do {
-                if registerUser {
+                do {
                     try user?.createInSecureStore()
-                } else {
+                } catch {
                     try user?.updateInSecureStore()
                 }
                 UserDefaults.standard.set(user?.userId, forKey: "account")
@@ -149,6 +149,7 @@ class ViewController: UIViewController {
                                                   style: .default,
                                                   handler: { (action) in
                                                     alert.dismiss(animated: true, completion: nil)
+                                                    User.removeFromSecure()
                                                     self.showConsentFlow(survey: survey!, registerUser: true)
                     }))
                     self.present(alert, animated: true, completion: nil)

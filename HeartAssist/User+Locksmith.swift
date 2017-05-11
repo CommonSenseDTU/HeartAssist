@@ -52,6 +52,16 @@ extension Musli.User: GenericPasswordSecureStorable, CreateableSecureStorable, R
         ]
     }
 
+    public static func removeFromSecure() {
+        let user = User()
+        user.userId = UserDefaults.standard.value(forKey: "account") as? String
+        do {
+            try user.deleteFromSecureStore()
+        } catch let exception {
+            print(exception)
+        }
+    }
+    
     public static func fromSecure() -> User? {
         let user = User()
         user.userId = UserDefaults.standard.value(forKey: "account") as? String
