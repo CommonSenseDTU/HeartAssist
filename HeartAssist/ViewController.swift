@@ -13,7 +13,8 @@ import Locksmith
 import Granola
 
 let secret = "7b66-4479-97d9-02d3253bb5c5"
-let surveyId = "17028160-1dd1-11e7-a5e7-4b5722ebfb6d"
+//let surveyId = "17028160-1dd1-11e7-a5e7-4b5722ebfb6d" // risoe
+let surveyId = "89b97a00-33e9-11e7-b5b9-8137c06061b9" // localhost
 
 class ViewController: UIViewController {
 
@@ -36,7 +37,7 @@ class ViewController: UIViewController {
     private func showConsentFlow(survey: Survey, registerUser: Bool) {
         self.consentManager = ConsentFlowManager(resourceManager: self.resourceManager, survey: survey)
         let consentController = self.consentManager!.viewController(register: registerUser)
-        self.consentManager?.delegate.existingUser = User.fromSecure()
+        self.consentManager?.delegate.existingUser = UserManager.load()
         self.consentManager?.delegate.consentCompletion = { (_ controller: UIViewController, _ user: Musli.User?, _ error: Error?) in
             if let userError = error as? ResourceManager.UserCreationError {
                 self.presentErrorWithOKButton(controller: controller,
@@ -107,9 +108,10 @@ class ViewController: UIViewController {
             }
             
             self.taskManager = TaskFlowManager(resourceManager: self.resourceManager, survey: survey!)
+//            let (show, consent) = UserManager.shou
 
             // Show consent flow if user has not been stored locally
-            guard let user = User.fromSecure() else {
+            guard let user = UserManager.load() else {
                 self.showConsentFlow(survey: survey!, registerUser: true)
                 return
             }
@@ -149,7 +151,11 @@ class ViewController: UIViewController {
                                                   style: .default,
                                                   handler: { (action) in
                                                     alert.dismiss(animated: true, completion: nil)
-                                                    User.removeFromSecure()
+                                                    do {
+                                                        try UserManager.remove()
+                                                    } catch let exception {
+                                                        print(exception)
+                                                    }
                                                     self.showConsentFlow(survey: survey!, registerUser: true)
                     }))
                     self.present(alert, animated: true, completion: nil)

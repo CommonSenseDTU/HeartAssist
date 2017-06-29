@@ -1,14 +1,17 @@
 {
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "978EAF306F66C80DB8BE261FED51D3F8E72A529D",
   "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
 
   },
   "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
     "11F5B74C87EFA08F9EB484143CC307E958146020" : 9223372036854775807,
+    "978EAF306F66C80DB8BE261FED51D3F8E72A529D" : 9223372036854775807,
     "3B7CDF04B0BAA84EC0F7120631FA2465975BB99C" : 9223372036854775807
   },
   "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "52FE7A91-9ACA-4C36-ADA8-395532367A98",
   "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
     "11F5B74C87EFA08F9EB484143CC307E958146020" : "Granola\/",
+    "978EAF306F66C80DB8BE261FED51D3F8E72A529D" : "HeartAssist\/",
     "3B7CDF04B0BAA84EC0F7120631FA2465975BB99C" : "Musli\/"
   },
   "DVTSourceControlWorkspaceBlueprintNameKey" : "HeartAssist",
@@ -24,6 +27,11 @@
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:CommonSenseDTU\/musli.git",
       "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "3B7CDF04B0BAA84EC0F7120631FA2465975BB99C"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:CommonSenseDTU\/HeartAssist.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "978EAF306F66C80DB8BE261FED51D3F8E72A529D"
     }
   ]
 }

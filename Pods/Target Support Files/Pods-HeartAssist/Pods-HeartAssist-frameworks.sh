@@ -97,6 +97,7 @@ if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "$BUILT_PRODUCTS_DIR/RKValueTransformers/RKValueTransformers.framework"
   install_framework "$BUILT_PRODUCTS_DIR/ResearchKit/ResearchKit.framework"
   install_framework "$BUILT_PRODUCTS_DIR/RestKit/RestKit.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/SDWebImage/SDWebImage.framework"
   install_framework "$BUILT_PRODUCTS_DIR/SOCKit/SOCKit.framework"
   install_framework "$BUILT_PRODUCTS_DIR/TransitionKit/TransitionKit.framework"
 fi
@@ -109,6 +110,7 @@ if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "$BUILT_PRODUCTS_DIR/RKValueTransformers/RKValueTransformers.framework"
   install_framework "$BUILT_PRODUCTS_DIR/ResearchKit/ResearchKit.framework"
   install_framework "$BUILT_PRODUCTS_DIR/RestKit/RestKit.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/SDWebImage/SDWebImage.framework"
   install_framework "$BUILT_PRODUCTS_DIR/SOCKit/SOCKit.framework"
   install_framework "$BUILT_PRODUCTS_DIR/TransitionKit/TransitionKit.framework"
 fi
